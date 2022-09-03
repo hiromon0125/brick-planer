@@ -13,7 +13,8 @@
 
 	<table>
 		<tr>
-			<td>A</td>
+			<td>Movie Night</td>
+			<td>Women in Business</td>
 		</tr>
 	</table>
 
@@ -22,7 +23,8 @@
 
 	<table>
 		<tr>
-			<td>B</td>
+			<td>Women in Computing Boston Trip </td>
+			<td>Juggling Club Meet</td>
 		</tr>
 	</table>
 
