@@ -30,20 +30,54 @@
 	</div>
 
 	<section>
-		<a href="class_desc">
-			<p class="category_box category_black" style="background-color: rgba(208,211,212,.90)">
-				GCIS 123: GOL 1459
-			</p>
-		</a>
-		<a href="class_desc">
-			<p class="category_box" style="background-color: rgba(132,189,.65)">BIOL 101: GOS 1250</p>
-		</a>
-		<a href="class_desc">
-			<p class="category_box" style="background-color: rgba(0,156,189,.65) ">MATH 182: GOS 1350</p>
-		</a>
-		<a href="class_desc">
-			<p class="category_box" style="background-color: rgba(218,41,28,.65) ">RIT 365: GLE 2150</p>
-		</a>
+        <a href="calendar">
+            <div class="category_box" style="background-color: rgba(208,211,212,.90)">
+                <p class="category_black">GCIS 123: Gol 1459</p>
+                <div class="time" style="width:100%">
+                    <i class="fa-solid fa-clock whicon"></i>
+                    <p class="description">12:00</p>
+                    <i class="fa-solid fa-location-dot whicon"></i>
+                    <p class="description">0.2mi</p>
+                </div>
+            </div>
+        </a>
+    
+        <h2 class = "category_heading">Dining</h2>
+        <a href="calendar">
+            <div class="category_box" style="background-color: rgba(132, 189, 0, .65)">
+                <p class="white">Ritz Sports Arena</p>
+                <div class="time" style="width:100%">
+                    <i class="fa-solid fa-clock whicon"></i>
+                    <p class="description">12:00 - 4:00</p>
+                    <i class="fa-solid fa-location-dot whicon"></i>
+                    <p class="description">0.2mi</p>
+                </div>
+            </div>
+        </a>
+    
+        <h2 class = "category_heading">Lounges</h2>
+        <a href="calendar">	
+            <div class="category_box" style="background-color: rgba(0,156,189,.65)">
+                <p class="white">Fireside Lounge</p>
+                <div class="time" style="width:100%">
+                    <i class="fa-solid fa-clock whicon"></i>
+                    <p class="description">0.2mi</p>
+                </div>
+            </div>
+        </a>
+    
+        <h2 class = "category_heading">Activties</h2>
+        <a href="calendar">
+            <div class="category_box" style="background-color: rgba(218, 41, 28,.65)">
+                <p class="white">Wiedman Fitness Center</p>
+                <div class="time" style="width:100%">
+                    <i class="fa-solid fa-clock whicon"></i>
+                    <p class="description">6am - 11pm</p>
+                    <i class="fa-solid fa-location-dot whicon"></i>
+                    <p class="description">0.2mi</p>
+                </div>
+            </div>
+        </a>
 	</section>
 </div>
 
