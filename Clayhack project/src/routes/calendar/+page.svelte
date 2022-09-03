@@ -16,7 +16,6 @@
 	let sun = 4;
 	let time = new Date();
 	$: currentDate = time.getDay();
-	$: console.log(currentDate);
 </script>
 
 <svelte:head>
