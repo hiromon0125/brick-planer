@@ -65,9 +65,11 @@
 		margin: var(--column-margin-top) auto 0 auto;
 	}
 	table, th, td {
-  border: 1px solid;
+  border: 1px;
 		text-align: center;
-		color: darkslategray;
+		color: rgb(255, 255, 255);
 		padding: 20px;
 	}
+	th {background-color: rgb(218 41 28);}
+	td {background-color: rgb(172 163 154);}
 </style>
