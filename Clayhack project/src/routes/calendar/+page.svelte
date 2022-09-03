@@ -88,9 +88,6 @@
 		margin: var(--column-margin-top) auto 0 auto;
 	}
 
-	#date {
-		text-align: center;
-	}
 	.days {
 		display: flex;
 		align-items: center;
@@ -105,12 +102,6 @@
 	h1 {
 		width: 100%;
 		font-weight: bold;
-	}
-	.category_heading {
-		width: 100%;
-		font-weight: bold;
-		font-size: 26px;
-		text-align: center;
 	}
 	.category_box {
 		width: 322px;
@@ -140,13 +131,6 @@
 		text-align: right;
 		float: right;
 		justify-content: flex-end;
-	}
-
-	.category_heading {
-		width: 100%;
-		font-weight: bold;
-		font-size: 26px;
-		text-align: center;
 	}
 
 	.white {

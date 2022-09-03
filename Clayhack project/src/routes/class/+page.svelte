@@ -29,6 +29,7 @@
 		style="border:0;"
 		loading="lazy"
 		referrerpolicy="no-referrer-when-downgrade"
+		title="google map of the classroom"
 	/>
 </div>
 
