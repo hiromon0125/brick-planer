@@ -35,24 +35,26 @@
 
 	<!--Information to be pulled from CampusGroups-->
 	<h1>RIT Events</h1>
-	<table>
-		<th>RIT Events</th>
-		<th>Date</th>
-		<th>Time</th>
-		<th>Location</th>
-		<tr>
-			<td>Women in Computing Boston Trip </td>
-			<td>9/12/2022</td>
-			<td>All Day</td>
-			<td>TBD</td>
-		</tr>
-		<tr>
-			<td>Juggling Club</td>
-			<td>xx.xx.xxxx</td>
-			<td>5:00 - 6:00 PM</td>
-			<td>Student Alumni Union</td>
-		</tr>
-	</table>
+	<div class="table">
+		<table>
+			<th>RIT Events</th>
+			<th>Date</th>
+			<th>Time</th>
+			<th>Location</th>
+			<tr>
+				<td>Women in Computing Boston Trip </td>
+				<td>9/12/2022</td>
+				<td>All Day</td>
+				<td>TBD</td>
+			</tr>
+			<tr>
+				<td>Juggling Club</td>
+				<td>xx.xx.xxxx</td>
+				<td>5:00 - 6:00 PM</td>
+				<td>Student Alumni Union</td>
+			</tr>
+		</table>
+	</div>
 </div>
 
 <!--table borders and width adjustments-->
