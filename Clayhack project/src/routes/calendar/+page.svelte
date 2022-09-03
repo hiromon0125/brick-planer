@@ -28,7 +28,6 @@
 </svelte:head>
 
 <div class="content">
-	<h1>Current Classes</h1>
 	<p id="date">
 		{date}
 	</p>
@@ -92,12 +91,6 @@
 	h1 {
 		width: 100%;
 		font-weight: bold;
-	}
-	.category_heading {
-		width: 100%;
-		font-weight: bold;
-		font-size: 26px;
-		text-align: center;
 	}
 	.category_box {
 		width: 322px;

@@ -77,11 +77,6 @@
 		justify-content: flex-end;
 	}
 
-	h1 {
-		width: 100%;
-		font-weight: bold;
-	}
-
 	.category_heading {
 		width: 100%;
 		font-weight: bold;
