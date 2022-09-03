@@ -3,6 +3,7 @@
 </script>
 
 <svelte:head>
+	<script src="https://kit.fontawesome.com/cc7ada224f.js" crossorigin="anonymous"></script>
 	<title>Home</title>
 	<meta name="description" content="Home page" />
 </svelte:head>
@@ -12,23 +13,54 @@
 	
 	<h2 class = "category_heading" style = "font-color: #35424a">Classes</h2>
 	<a href="calendar">
-		<p class = "category_box category_black" style="background-color: rgba(208,211,212,.90)">GCIS 123: Gol 1459</p>
-	</a>
-	
-	
-	<h2 class = "category_heading">Dining</h2>
-	<a href="calendar">
-		<p class = "category_box" style="background-color: rgba(132,189,.65)">GCIS 123: Gol 1459</p>
+		<div class="category_box" style="background-color: rgba(208,211,212,.90)">
+			<p>GCIS 123: Gol 1459</p>
+				<div class="time" style="width:100%">
+					<i class="fa-solid fa-clock whicon"></i>
+					<p class="description">12:00</p>
+					<i class="fa-solid fa-location-dot whicon"></i>
+					<p class="description">0.2mi</p>
+				</div>
+		</div>
 	</a>
 
-	<h2 class = "category_headin">Lounges</h2>
+	<h2 class = "category_heading">Dining</h2>
+	<a href="calendar">
+		<div class="category_box" style="background-color: rgba(132, 189, 0, 65)">
+			<p>GCIS 123: Gol 1459</p>
+			<div class="time" style="width:100%">
+				<i class="fa-solid fa-clock whicon"></i>
+				<p class="description">12:00</p>
+				<i class="fa-solid fa-location-dot whicon"></i>
+				<p class="description">0.2mi</p>
+			</div>
+		</div>
+	</a>
+
+	<h2 class = "category_heading">Lounges</h2>
 	<a href="calendar">	
-		<p class = "category_box" style="background-color: rgba(0,156,189,.65) ">GCIS 123: Gol 1459</p>
+		<div class="category_box" style="background-color: rgba(0,156,189,.65)">
+		<p>GCIS 123: Gol 1459</p>
+			<div class="time" style="width:100%">
+				<i class="fa-solid fa-clock whicon"></i>
+				<p class="description">12:00</p>
+				<i class="fa-solid fa-location-dot whicon"></i>
+				<p class="description">0.2mi</p>
+			</div>
+		</div>
 	</a>
 
 	<h2 class = "category_heading">Activties</h2>
 	<a href="calendar">
-		<p class = "category_box" style="background-color: rgba(218,41,28,.65) ">GCIS 123: Gol 1459</p>
+		<div class="category_box" style="background-color: rgba(218, 41, 28,.65)">
+			<p>GCIS 123: Gol 1459</p>
+				<div class="time" style="width:100%">
+					<i class="fa-solid fa-clock whicon"></i>
+					<p class="description">12:00</p>
+					<i class="fa-solid fa-location-dot whicon"></i>
+					<p class="description">0.2mi</p>
+				</div>
+		</div>
 	</a>
 </section>
 
@@ -39,6 +71,13 @@
 		justify-content: center;
 		align-items: center;
 		flex: 1;
+	}
+
+	.time {
+		display: flex;
+		flex-direction: row;
+		text-align: right;
+		padding-left: 180px;
 	}
 
 	h1 {
@@ -56,16 +95,29 @@
 	.category_box {
 		width: 322px;
 		padding: 15px;
-		padding-top: 40px;
+		padding-top: 10px;
 		border: 10px;
-		height: 50px;
+		height: 90px;
 		text-align: center;
 		border-radius: 15px;
 		color: white;
 		font-size: 20px;
 	}
 
+	.whicon {
+		color: white;
+		position: relative;
+		bottom: 5px;
+		right: 5px;
+	}
+
 	.category_black {
 		color: #35424a
+	}
+
+	.description {
+		margin: 0;
+		margin-right: 10px;
+
 	}
 </style>
