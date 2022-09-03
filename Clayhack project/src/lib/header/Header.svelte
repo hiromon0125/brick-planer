@@ -10,7 +10,6 @@
 		'/setting': 'Settings'
 	};
 	$: title = listOfTitles[$page.url.pathname];
-	// $page.url.pathname === '/about'
 </script>
 
 <header>
