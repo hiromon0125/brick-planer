@@ -21,7 +21,7 @@
 			<i class="fa-solid fa-calendar" />Calendar</a
 		>
 		<a class="link" on:click={menuStateChange} href="activities"
-			><i class="fa-solid fa-flag" /> Activties</a
+			><i class="fa-solid fa-flag" /> Activities</a
 		>
 		<a class="link" on:click={menuStateChange}><i class="fa-solid fa-heart" />Favorite Locations</a>
 		<a class="link" on:click={menuStateChange}><i class="fa-solid fa-bowl-food" />Food Locations</a>
