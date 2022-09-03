@@ -9,7 +9,7 @@
 		'/activities': 'Activities',
 		'/setting': 'Settings'
 	};
-
+	$: title = listOfTitles[$page.url.pathname];
 	// $page.url.pathname === '/about'
 </script>
 
@@ -17,7 +17,7 @@
 	<div class="corner">
 		<MunsonBtn />
 	</div>
-	<h1>{listOfTitles[$page.url.pathname]}</h1>
+	<h1>{title ? title : ''}</h1>
 
 	<div class="corner">
 		<img

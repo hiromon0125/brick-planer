@@ -77,11 +77,6 @@
 		justify-content: flex-end;
 	}
 
-	h1 {
-		width: 100%;
-		font-weight: bold;
-	}
-
 	.category_heading {
 		width: 100%;
 		font-weight: bold;
@@ -109,6 +104,7 @@
 		position: relative;
 		right: 5px;
 		top: 5px;
+		z-index: 100;
 	}
 
 	.category_black {

@@ -6,7 +6,6 @@
 	<title>About</title>
 	<meta name="description" content="About this app" />
 </svelte:head>
-
 <div class="content">
     <h1 id="text-align">GCSIS 123 | GOL 1459</h1>
     <img id="center" src="https://www.rit.edu/computing/sites/rit.edu.computing/files/images/jumbotron/computing-departments-jumbotron.jpg" alt="GCSIS 123">
@@ -77,5 +76,4 @@
     #center {
         text-align: center;
     }
-	
 </style>
