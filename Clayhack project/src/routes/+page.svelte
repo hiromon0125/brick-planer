@@ -10,25 +10,27 @@
 <section>
 	<h1>Home</h1>
 
-	<div>
-		<h2 class = category_heading style = "font-color: #35424a">Classes</h2>
-		<p class = category_box style="background-color: rgba(208,211,212,.65)">GCIS 123: Gol 1459</p>
-	</div>
 	
-	<div>
-		<h2 class = category_heading>Dining</h2>
+	<h2 class = category_heading style = "font-color: #35424a">Classes</h2>
+	<a href="calendar">
+		<p class = category_box style="background-color: rgba(208,211,212,.90)">GCIS 123: Gol 1459</p>
+	</a>
+	
+	
+	<h2 class = category_heading>Dining</h2>
+	<a href="calendar">
 		<p class = category_box style="background-color: rgba(132,189,.65)">GCIS 123: Gol 1459</p>
-	</div>
+	</a>
 
-	<div>
-		<h2 class = category_heading>Lounges</h2>
+	<h2 class = category_heading>Lounges</h2>
+	<a href="calendar">	
 		<p class = category_box style="background-color: rgba(0,156,189,.65) ">GCIS 123: Gol 1459</p>
-	</div>
+	</a>
 
-	<div>
-		<h2 class = category_heading>Activties</h2>
+	<h2 class = category_heading>Activties</h2>
+	<a href="calendar">
 		<p class = category_box style="background-color: rgba(218,41,28,.65) ">GCIS 123: Gol 1459</p>
-	</div>
+	</a>
 </section>
 
 <style>
@@ -63,5 +65,10 @@
 		border-radius: 15px;
 		color: white;
 		font-size: 20px;
+	}
+
+
+	.category_white {
+		color: #35424a
 	}
 </style>
