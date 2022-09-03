@@ -8,7 +8,6 @@
 	let sun = 4;
 	let time = new Date();
 	$: currentDate = time.getDay();
-	$: console.log(currentDate);
 </script>
 
 <svelte:head>
@@ -31,7 +30,7 @@
 	</div>
 
 	<section>
-        <a class = "class-desc-container" href="class_desc">
+        <a class = "class-desc-container" href="class">
             <div class="category_box" style="background-color: rgba(208,211,212,.90)">
                 <p class="category_black">GCIS 123 | Gol 1459</p>
                 <div class="time" style="width:100%">
@@ -42,7 +41,7 @@
                 </div>
             </div>
         </a>
-        <a class = "class-desc-container" href="class_desc">
+        <a class = "class-desc-container" href="class">
             <div class="category_box" style="background-color: rgba(132, 189, 0, .65)">
                 <p class="white">BIOL 101 | GOS 1250</p>
                 <div class="time" style="width:100%">
@@ -53,7 +52,7 @@
                 </div>
             </div>
         </a>
-        <a class = "class-desc-container" href="class_desc">	
+        <a class = "class-desc-container" href="class">	
             <div class="category_box" style="background-color: rgba(0,156,189,.65)">
                 <p class="white">MATH 182 | GOS 1350</p>
                 <div class="time" style="width:100%">
@@ -64,7 +63,7 @@
                 </div>
             </div>
         </a>
-        <a class = "class-desc-container" href="class_desc">
+        <a class = "class-desc-container" href="class">
             <div class="category_box" style="background-color: rgba(218, 41, 28,.65)">
                 <p class="white">RIT 365 | GLE 2150</p>
                 <div class="time" style="width:100%">

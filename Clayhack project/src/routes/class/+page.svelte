@@ -5,7 +5,6 @@
 	<title>About</title>
 	<meta name="description" content="About this app" />
 </svelte:head>
-<div class="background" />
 <div class="content">
 	<h1 id="text-align">GCSIS 123 | GOL 1459</h1>
 	<img
@@ -28,13 +27,15 @@
 		width="600"
 		height="450"
 		style="border:0;"
-		allowfullscreen=""
 		loading="lazy"
 		referrerpolicy="no-referrer-when-downgrade"
 	/>
 </div>
 
 <style>
+	iframe {
+		width: 100%;
+	}
 	.content {
 		width: 100%;
 		max-width: var(--column-width);
