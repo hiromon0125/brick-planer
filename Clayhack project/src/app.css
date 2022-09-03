@@ -19,16 +19,6 @@
 body {
 	min-height: 100vh;
 	margin: 0;
-<<<<<<< HEAD
-	background-color: var(--pure-white);
-	background: linear-gradient(
-		180deg,
-		var(--primary-color) 0%,
-		var(--secondary-color) 10.45%,
-		var(--tertiary-color) 41.35%
-	);
-=======
->>>>>>> c64d8e61b9a5f71668b57b92221eb7fb77d0397d
 }
 
 body::before {
