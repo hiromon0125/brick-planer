@@ -7,6 +7,7 @@
 		'/about': 'About',
 		'/calendar': 'Calendar',
 		'/activities': 'Activities',
+		'/class': 'Class',
 		'/setting': 'Settings'
 	};
 	$: title = listOfTitles[$page.url.pathname];
