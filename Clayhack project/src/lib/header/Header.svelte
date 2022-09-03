@@ -1,33 +1,21 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-import MunsonBtn from './munsonBtn.svelte';
-	import logo from './svelte-logo.svg';
+	import MunsonBtn from './munsonBtn.svelte';
+	let listOfTitles: { [key: string]: string } = {
+		'/': 'Home',
+		'/about': 'About',
+		'/calendar': 'Calendar',
+		'/activities': 'Activities'
+	};
+
+	// $page.url.pathname === '/about'
 </script>
 
 <header>
 	<div class="corner">
 		<MunsonBtn />
 	</div>
-
-	<nav data-sveltekit-prefetch>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
-		</svg>
-		<ul>
-			<li class:active={$page.url.pathname === '/'}>
-				<a href="/">Home</a>
-			</li>
-			<li class:active={$page.url.pathname === '/about'}>
-				<a href="/about">About</a>
-			</li>
-			<li class:active={$page.url.pathname === '/'}>
-				<a href="/activities catalogue">Activities Catalogue</a>
-			</li>
-		</ul>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
-		</svg>
-	</nav>
+	<h1>{listOfTitles[$page.url.pathname]}</h1>
 
 	<div class="corner">
 		<!-- TODO put something else here? github link? -->
@@ -35,20 +23,27 @@ import MunsonBtn from './munsonBtn.svelte';
 </header>
 
 <style>
+	h1 {
+		margin: 0;
+		margin-top: 15px;
+	}
+
 	header {
 		display: flex;
 		justify-content: space-between;
+		position: relative;
+		height: 4rem;
 	}
 
 	.corner {
-		width: 3em;
-		height: 3em;
+		width: 3rem;
 	}
 
 	nav {
 		display: flex;
 		justify-content: center;
 		--background: rgba(255, 255, 255, 0.7);
+		align-items: stretch;
 	}
 
 	svg {
@@ -65,13 +60,13 @@ import MunsonBtn from './munsonBtn.svelte';
 		position: relative;
 		padding: 0;
 		margin: 0;
-		height: 3em;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		list-style: none;
 		background: var(--background);
 		background-size: contain;
+		align-items: stretch;
 	}
 
 	li {

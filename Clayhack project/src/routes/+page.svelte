@@ -8,7 +8,6 @@
 </svelte:head>
 
 <section>
-	<h1>Home</h1>
 	
 	<h2 class = "category_heading" style = "font-color: #35424a">Classes</h2>
 	<a href="calendar">
