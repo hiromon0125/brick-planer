@@ -42,51 +42,9 @@
 		max-width: var(--column-width);
 		margin: var(--column-margin-top) auto 0 auto;
 	}
-
-	#date {
-		text-align: center;
-	}
-	.days {
-		display: flex;
-		align-items: center;
-		text-align: center;
-		flex-direction: row;
-		justify-content: space-evenly;
-	}
-	#today {
-		color: orange;
-		font-weight: bold;
-	}
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 1;
-	}
 	h1 {
 		width: 100%;
 		font-weight: bold;
-	}
-	.category_heading {
-		width: 100%;
-		font-weight: bold;
-		font-size: 26px;
-		text-align: center;
-	}
-	.category_box {
-		width: 322px;
-		padding: 15px;
-		padding-top: 40px;
-		border: 10px;
-		height: 50px;
-		text-align: center;
-		border-radius: 15px;
-		color: white;
-		font-size: 20px;
-	}
-	.category_black {
-		color: #35424a;
 	}
 	#center {
 		align-items: center;
@@ -97,9 +55,5 @@
 	}
 	#center {
 		text-align: center;
-	}
-	.background {
-		height: 1000px;
-		background-image: url('https://marvel-b1-cdn.bc0a.com/f00000000128518/mc-d0634edc-d49f-4621-b137-356550-cdn-endpoint.azureedge.net/-/media/project/laureate/shared/course-hero/design/graduate-certificate-in-software-engineering/graduate-certificate-of-software-engineering-design-course-tua-hero-lg.jpg?rev=d0c1befdbd3d4546a5c1fd1bb22ab524');
 	}
 </style>
