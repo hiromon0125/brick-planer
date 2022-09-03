@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
 	import MunsonBtn from './munsonBtn.svelte';
 	let listOfTitles: { [key: string]: string } = {
@@ -19,7 +20,14 @@
 	<h1>{listOfTitles[$page.url.pathname]}</h1>
 
 	<div class="corner">
-		<img class="logo" src="/rit.png" alt="" />
+		<img
+			on:click={() => {
+				goto('https://mycourses.rit.edu/');
+			}}
+			class="logo"
+			src="/rit.png"
+			alt=""
+		/>
 	</div>
 </header>
 
