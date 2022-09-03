@@ -29,30 +29,29 @@
     </p>
 
     <div class="days">
-        <p class="days">Mon ({mon})</p>
-        <p class="days">Tue ({tue})</p>
-        <p class="days">Wed ({wed})</p>
-        <p class="days">Thu ({thu})</p>
-        <p class="days">Fri ({fri})</p>
-        <p class="days">Sat ({sat})</p>
-        <p class="days">Sun ({sun})</p>
+        <p class="days">Mon<br>{mon}</p>
+        <p class="days">Tue<br>{tue}</p>
+        <p class="days">Wed<br>{wed}</p>
+        <p class="days">Thu<br>{thu}</p>
+        <p class="days">Fri<br>{fri}</p>
+        <p class="days" id="today">Sat<br>{sat}</p>
+        <p class="days">Sun<br>{sun}</p>
     </div>
 
-    <div class="planner">8:00 AM</div>
-    <div class="planner">9:00 AM</div>
-    <div class="planner">10:00 AM</div>
-    <div class="planner">11:00 AM</div>
-    <div class="planner">12:00 PM</div>
-    <div class="planner">1:00 PM</div>
-    <div class="planner">2:00 PM</div>
-    <div class="planner">3:00 PM</div>
-    <div class="planner">4:00 PM</div>
-    <div class="planner">5:00 PM</div>
-    <div class="planner">6:00 PM</div>
-    <div class="planner">7:00 PM</div>
-    <div class="planner">8:00 PM</div>
-    <div class="planner">9:00 PM</div>
-    <div class="planner">10:00 PM</div>
+    <section>
+        <a href="calendar_extend">
+            <p class = "category_box category_black" style="background-color: rgba(208,211,212,.90)">GCIS 123: GOL 1459</p>
+        </a>
+        <a href="calendar">
+            <p class = "category_box" style="background-color: rgba(132,189,.65)">BIOL 101: GOS 1250</p>
+        </a>
+        <a href="calendar">	
+            <p class = "category_box" style="background-color: rgba(0,156,189,.65) ">MATH 182: GOS 1350</p>
+        </a>
+        <a href="calendar">
+            <p class = "category_box" style="background-color: rgba(218,41,28,.65) ">RIT 365: GLE 2150</p>
+        </a>
+    </section>
 </div>
 
 <style>
@@ -67,14 +66,45 @@
 	}
     .days {
         display: flex;
+        align-items: center;
+        text-align: center;
         flex-direction: row;
         justify-content: space-evenly;
     }
-    .planner {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        border-top: thin dotted;
+    #today
+    {
+        color: orange;
+        font-weight: bold;
     }
-
+    section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex: 1;
+	}
+	h1 {
+		width: 100%;
+		font-weight: bold;
+	}
+	.category_heading {
+		width: 100%;
+		font-weight: bold;
+		font-size: 26px;
+		text-align: center;
+	}
+	.category_box {
+		width: 322px;
+		padding: 15px;
+		padding-top: 40px;
+		border: 10px;
+		height: 50px;
+		text-align: center;
+		border-radius: 15px;
+		color: white;
+		font-size: 20px;
+	}
+	.category_black {
+		color: #35424a
+	}
 </style>
