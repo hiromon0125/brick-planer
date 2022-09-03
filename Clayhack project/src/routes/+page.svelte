@@ -4,26 +4,26 @@
 
 <svelte:head>
 	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="description" content="Home page" />
 </svelte:head>
 
 <section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset="svelte-welcome.webp" type="image/webp" />
-				<img src="svelte-welcome.png" alt="Welcome" />
-			</picture>
-		</span>
+	<h1>Home</h1>
 
-		to your new<br />SvelteKit app
-	</h1>
+	<div>
+		<h2 class="category_heading">Classes</h2>
+		<p class="category_box" style="background-color: rgba(208,211,212,.65)">GCIS 123: Gol 1459</p>
+	</div>
 
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
+	<div>
+		<h2 class="category_heading">Dining</h2>
+		<p class="category_box" style="background-color: rgba(132,189,.65)">GCIS 123: Gol 1459</p>
+	</div>
 
-	<Counter />
+	<div>
+		<h2 class="category_heading">Lounges</h2>
+		<p class="category_box">GCIS 123: Gol 1459</p>
+	</div>
 </section>
 
 <style>
@@ -37,21 +37,25 @@
 
 	h1 {
 		width: 100%;
+		font-weight: bold;
 	}
 
-	.welcome {
-		display: block;
-		position: relative;
+	.category_heading {
 		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
+		font-weight: bold;
+		font-size: 26px;
+		text-align: center;
 	}
 
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
+	.category_box {
+		width: 322px;
+		padding: 15px;
+		padding-top: 40px;
+		border: 10px;
+		height: 50px;
+		text-align: center;
+		border-radius: 15px;
+		color: #35424a;
+		font-size: 20px;
 	}
 </style>
