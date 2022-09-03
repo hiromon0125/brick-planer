@@ -6,7 +6,11 @@
     let day = "" + todayDate.getDay();
     let year = "" + todayDate.getFullYear();
     let date = "Todays Date: " + weekDay + month + day + year;*/
-	let date = new Date();
+    let date = new Date();
+    const month = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
+    const dateTitle = "Today's Date: " + (date.getMonth()+1) + " " + date.getDate() + " " + date.getFullYear();
 	let mon = 29;
 	let tue = 30;
 	let wed = 31;
