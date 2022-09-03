@@ -58,6 +58,7 @@
 
 	<!--table borders and width adjustments-->
 <style>
+div content{overflow: scroll;}
 	table{
 		width: 100%;
 		height: 50%;

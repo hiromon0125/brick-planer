@@ -1,6 +1,6 @@
 <script lang="ts">
-    //Sat Sep 03 2022
-    /*let todayDate = new Date();
+	//Sat Sep 03 2022
+	/*let todayDate = new Date();
     let weekDay = "" + todayDate.getDate();
     let month = "" + todayDate.getMonth();
     let day = "" + todayDate.getDay();
@@ -10,15 +10,17 @@
     const month = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"
 ];
-    date = "Today's Date: " + (date.getMonth()+1) + " " + date.getDate() + " " + date.getFullYear();
-    let mon = 29;
-    let tue = 30;
-    let wed = 31;
-    let thu = 1;
-    let fri = 2;
-    let sat = 3;
-    let sun = 4;
-
+    const dateTitle = "Today's Date: " + (date.getMonth()+1) + " " + date.getDate() + " " + date.getFullYear();
+	let mon = 29;
+	let tue = 30;
+	let wed = 31;
+	let thu = 1;
+	let fri = 2;
+	let sat = 3;
+	let sun = 4;
+	let time = new Date();
+	$: currentDate = time.getDay();
+	$: console.log(currentDate);
 </script>
 
 <svelte:head>
@@ -28,34 +30,36 @@
 
 <div class="content">
 	<h1>Current Classes</h1>
-    <p id="date">
-        {date}
-    </p>
+	<p id="date">
+		{date}
+	</p>
 
-    <div class="days">
-        <p class="days">Mon<br>{mon}</p>
-        <p class="days">Tue<br>{tue}</p>
-        <p class="days">Wed<br>{wed}</p>
-        <p class="days">Thu<br>{thu}</p>
-        <p class="days">Fri<br>{fri}</p>
-        <p class="days" id="today">Sat<br>{sat}</p>
-        <p class="days">Sun<br>{sun}</p>
-    </div>
+	<div class="days">
+		<p class="days" class:today={currentDate == 1}>Mon<br />{mon}</p>
+		<p class="days" class:today={currentDate == 2}>Tue<br />{tue}</p>
+		<p class="days" class:today={currentDate == 3}>Wed<br />{wed}</p>
+		<p class="days" class:today={currentDate == 4}>Thu<br />{thu}</p>
+		<p class="days" class:today={currentDate == 5}>Fri<br />{fri}</p>
+		<p class="days" class:today={currentDate == 6}>Sat<br />{sat}</p>
+		<p class="days" class:today={currentDate == 7}>Sun<br />{sun}</p>
+	</div>
 
-    <section>
-        <a href="calendar_extend">
-            <p class = "category_box category_black" style="background-color: rgba(208,211,212,.90)">GCIS 123: GOL 1459</p>
-        </a>
-        <a href="calendar">
-            <p class = "category_box" style="background-color: rgba(132,189,.65)">BIOL 101: GOS 1250</p>
-        </a>
-        <a href="calendar">	
-            <p class = "category_box" style="background-color: rgba(0,156,189,.65) ">MATH 182: GOS 1350</p>
-        </a>
-        <a href="calendar">
-            <p class = "category_box" style="background-color: rgba(218,41,28,.65) ">RIT 365: GLE 2150</p>
-        </a>
-    </section>
+	<section>
+		<a href="calendar_extend">
+			<p class="category_box category_black" style="background-color: rgba(208,211,212,.90)">
+				GCIS 123: GOL 1459
+			</p>
+		</a>
+		<a href="calendar">
+			<p class="category_box" style="background-color: rgba(132,189,.65)">BIOL 101: GOS 1250</p>
+		</a>
+		<a href="calendar">
+			<p class="category_box" style="background-color: rgba(0,156,189,.65) ">MATH 182: GOS 1350</p>
+		</a>
+		<a href="calendar">
+			<p class="category_box" style="background-color: rgba(218,41,28,.65) ">RIT 365: GLE 2150</p>
+		</a>
+	</section>
 </div>
 
 <style>
@@ -68,19 +72,18 @@
 	#date {
 		text-align: center;
 	}
-    .days {
-        display: flex;
-        align-items: center;
-        text-align: center;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    #today
-    {
-        color: orange;
-        font-weight: bold;
-    }
-    section {
+	.days {
+		display: flex;
+		align-items: center;
+		text-align: center;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+	.today {
+		color: orange;
+		font-weight: bold;
+	}
+	section {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -109,6 +112,6 @@
 		font-size: 20px;
 	}
 	.category_black {
-		color: #35424a
+		color: #35424a;
 	}
 </style>
