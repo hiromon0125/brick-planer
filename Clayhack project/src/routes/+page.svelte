@@ -109,6 +109,7 @@
 		position: relative;
 		right: 5px;
 		top: 5px;
+		z-index: 100;
 	}
 
 	.category_black {
