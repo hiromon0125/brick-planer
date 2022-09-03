@@ -6,9 +6,7 @@
 	<title>About</title>
 	<meta name="description" content="About this app" />
 </svelte:head>
-<div class="background">
 
-</div>
 <div class="content">
     <h1 id="text-align">GCSIS 123 | GOL 1459</h1>
     <img id="center" src="https://www.rit.edu/computing/sites/rit.edu.computing/files/images/jumbotron/computing-departments-jumbotron.jpg" alt="GCSIS 123">
@@ -78,9 +76,5 @@
     }
     #center {
         text-align: center;
-    }
-    .background {
-        height: 1000px;
-        background-image: url("https://marvel-b1-cdn.bc0a.com/f00000000128518/mc-d0634edc-d49f-4621-b137-356550-cdn-endpoint.azureedge.net/-/media/project/laureate/shared/course-hero/design/graduate-certificate-in-software-engineering/graduate-certificate-of-software-engineering-design-course-tua-hero-lg.jpg?rev=d0c1befdbd3d4546a5c1fd1bb22ab524");
     }
 </style>

@@ -1,16 +1,4 @@
 <script lang="ts">
-	//Sat Sep 03 2022
-	/*let todayDate = new Date();
-    let weekDay = "" + todayDate.getDate();
-    let month = "" + todayDate.getMonth();
-    let day = "" + todayDate.getDay();
-    let year = "" + todayDate.getFullYear();
-    let date = "Todays Date: " + weekDay + month + day + year;*/
-    let date = new Date();
-    const month = ["January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December"
-];
-    const dateTitle = "Today's Date: " + (date.getMonth()+1) + " " + date.getDate() + " " + date.getFullYear();
 	let mon = 29;
 	let tue = 30;
 	let wed = 31;
@@ -30,9 +18,6 @@
 
 <div class="content">
 	<h1>Current Classes</h1>
-	<p id="date">
-		{date}
-	</p>
 
 	<div class="days">
 		<p class="days" class:today={currentDate == 1}>Mon<br />{mon}</p>
@@ -45,18 +30,18 @@
 	</div>
 
 	<section>
-		<a href="calendar_extend">
+		<a href="class_desc">
 			<p class="category_box category_black" style="background-color: rgba(208,211,212,.90)">
 				GCIS 123: GOL 1459
 			</p>
 		</a>
-		<a href="calendar">
+		<a href="class_desc">
 			<p class="category_box" style="background-color: rgba(132,189,.65)">BIOL 101: GOS 1250</p>
 		</a>
-		<a href="calendar">
+		<a href="class_desc">
 			<p class="category_box" style="background-color: rgba(0,156,189,.65) ">MATH 182: GOS 1350</p>
 		</a>
-		<a href="calendar">
+		<a href="class_desc">
 			<p class="category_box" style="background-color: rgba(218,41,28,.65) ">RIT 365: GLE 2150</p>
 		</a>
 	</section>
