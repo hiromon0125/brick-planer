@@ -20,4 +20,8 @@
 		margin: 20px;
 		overflow: hidden;
 	}
+
+    img:hover {
+        opacity: 0.5;
+    }
 </style>
