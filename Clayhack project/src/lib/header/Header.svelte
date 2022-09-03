@@ -20,10 +20,7 @@ import MunsonBtn from './munsonBtn.svelte';
 			<li class:active={$page.url.pathname === '/about'}>
 				<a href="/about">About</a>
 			</li>
-			<li class:active={$page.url.pathname === '/todos'}>
-				<a href="/todos">Todos</a>
-			</li>
-			<li class:active={$page.URL.pathname === '/'}>
+			<li class:active={$page.url.pathname === '/'}>
 				<a href="/activities catalogue">Activities Catalogue</a>
 			</li>
 		</ul>
