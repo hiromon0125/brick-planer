@@ -9,30 +9,31 @@
 
 <div class="content">
 	<!--Information pulled from inputs-->
-	<h1>Your Activities</h1>
 
 	<table>
-		<tr>
-			<td>Movie Night</td>
-			<td>Women in Business</td>
-		</tr>
+		<th>Your Activities</th>
+		<th>Time</th>
+			<tr>
+				<td>Movie Night</td>
+				<td>8:00 - 9:00 PM</td>
+			</tr>
 	</table>
 
-	<!--Information pulled from CampusGroups-->>
-	<h1>RIT Events</h1>
-
+	<!--Information pulled from CampusGroups-->
+	
 	<table>
-		<tr>
-			<td>Women in Computing Boston Trip </td>
-			<td>Juggling Club Meet</td>
-		</tr>
+		<th>RIT Events</th>
+			<tr>
+				<td>Women in Computing Boston Trip </td>
+				<td>Juggling Club Meet</td>
+			</tr>
 	</table>
 
 </div>
 
 <style>
-	.content {
-		width: 100%;
+	table{
+		width: 50%;
 		max-width: var(--column-width);
 		margin: var(--column-margin-top) auto 0 auto;
 	}
