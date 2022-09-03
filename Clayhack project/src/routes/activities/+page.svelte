@@ -9,9 +9,9 @@
 <!--Table not actually connected to .js. Simply aesthetic-->
 
 <div class="content">
+
 	<!--Information to be pulled from inputs-->
 	<h1>Activites Catalogue</h1>
-
 	<table>
 		<th>Your Activities</th>
 		<th>Date</th>
@@ -31,8 +31,10 @@
 			</tr>
 	</table>
 
+	<p></p>
+
 	<!--Information to be pulled from CampusGroups-->
-	
+	<h1>RIT Events</h1>
 	<table>
 		<th>RIT Events</th>
 		<th>Date</th>
@@ -58,10 +60,14 @@
 <style>
 	table{
 		width: 100%;
+		height: 50%;
 		max-width: var(--column-width);
 		margin: var(--column-margin-top) auto 0 auto;
 	}
 	table, th, td {
   border: 1px solid;
+		text-align: center;
+		color: darkslategray;
+		padding: 20px;
 	}
 </style>

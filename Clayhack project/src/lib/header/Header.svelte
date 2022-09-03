@@ -21,7 +21,7 @@ import MunsonBtn from './munsonBtn.svelte';
 				<a href="/about">About</a>
 			</li>
 			<li class:active={$page.url.pathname === '/'}>
-				<a href="/activitiesCatalogue">Activities Catalogue</a>
+				<a href="/activities">Activities</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
