@@ -9,8 +9,6 @@
 
 <section>
 	<h1>Home</h1>
-
-<<<<<<< HEAD
 	
 	<h2 class = category_heading style = "font-color: #35424a">Classes</h2>
 	<a href="calendar">
@@ -47,7 +45,6 @@
 		<h2 class="category_heading">Lounges</h2>
 		<p class="category_box">GCIS 123: Gol 1459</p>
 	</div>
->>>>>>> c64d8e61b9a5f71668b57b92221eb7fb77d0397d
 </section>
 
 <style>
