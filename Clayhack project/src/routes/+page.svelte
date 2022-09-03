@@ -11,18 +11,18 @@
 	<h1>Home</h1>
 
 	<div>
-		<h2 class = category_heading>Classes</h2>
-		<p class = category_box style="background-color: rgba(208,211,212,.65)">GCIS 123: Gol 1459</p>
-	</div>
-	
-	<div>
-		<h2 class = category_heading>Dining</h2>
-		<p class = category_box style="background-color: rgba(132,189,.65)">GCIS 123: Gol 1459</p>
+		<h2 class="category_heading">Classes</h2>
+		<p class="category_box" style="background-color: rgba(208,211,212,.65)">GCIS 123: Gol 1459</p>
 	</div>
 
 	<div>
-		<h2 class = category_heading>Lounges</h2>
-		<p class = category_box style="background-color: ">GCIS 123: Gol 1459</p>
+		<h2 class="category_heading">Dining</h2>
+		<p class="category_box" style="background-color: rgba(132,189,.65)">GCIS 123: Gol 1459</p>
+	</div>
+
+	<div>
+		<h2 class="category_heading">Lounges</h2>
+		<p class="category_box">GCIS 123: Gol 1459</p>
 	</div>
 </section>
 
@@ -38,7 +38,6 @@
 	h1 {
 		width: 100%;
 		font-weight: bold;
-		
 	}
 
 	.category_heading {
