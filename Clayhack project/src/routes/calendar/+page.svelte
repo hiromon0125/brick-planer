@@ -94,6 +94,11 @@
 		flex-direction: row;
 		justify-content: space-evenly;
 	}
+
+    .days:hover {
+        background-color: grey;
+        border-radius: 2pt;
+    }
 	.today {
 		color: orange;
 		font-weight: bold;
