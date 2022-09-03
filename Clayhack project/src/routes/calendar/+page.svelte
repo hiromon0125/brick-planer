@@ -1,5 +1,20 @@
 <script lang="ts">
-	//Document.getElementById("date").innerHTML = Date();
+    //Sat Sep 03 2022
+    /*let todayDate = new Date();
+    let weekDay = "" + todayDate.getDate();
+    let month = "" + todayDate.getMonth();
+    let day = "" + todayDate.getDay();
+    let year = "" + todayDate.getFullYear();
+    let date = "Todays Date: " + weekDay + month + day + year;*/
+    let date = new Date();
+    let mon = 29;
+    let tue = 30;
+    let wed = 31;
+    let thu = 1;
+    let fri = 2;
+    let sat = 3;
+    let sun = 4;
+
 </script>
 
 <svelte:head>
@@ -9,29 +24,35 @@
 
 <div class="content">
 	<h1>Current Classes</h1>
-	<p id="date">Date </p>
+    <p id="date">
+        {date}
+    </p>
 
-	<ul>
-		<li style="display:inline">Sun</li>
-		<li style="display:inline">Mon</li>
-		<li style="display:inline">Tue</li>
-		<li style="display:inline">Wed</li>
-		<li style="display:inline">Thur</li>
-		<li style="display:inline">Sun</li>
-	</ul>
+    <div class="days">
+        <p class="days">Mon ({mon})</p>
+        <p class="days">Tue ({tue})</p>
+        <p class="days">Wed ({wed})</p>
+        <p class="days">Thu ({thu})</p>
+        <p class="days">Fri ({fri})</p>
+        <p class="days">Sat ({sat})</p>
+        <p class="days">Sun ({sun})</p>
+    </div>
 
-	<pre>npm create svelte@latest</pre>
-
-	<p>
-		The page you're looking at is purely static HTML, with no client-side interactivity needed.
-		Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
-		the devtools network panel and reloading.
-	</p>
-
-	<p>
-		The <a href="/todos">TODOs</a> page illustrates SvelteKit's data loading and form handling. Try using
-		it with JavaScript disabled!
-	</p>
+    <div class="planner">8:00 AM</div>
+    <div class="planner">9:00 AM</div>
+    <div class="planner">10:00 AM</div>
+    <div class="planner">11:00 AM</div>
+    <div class="planner">12:00 PM</div>
+    <div class="planner">1:00 PM</div>
+    <div class="planner">2:00 PM</div>
+    <div class="planner">3:00 PM</div>
+    <div class="planner">4:00 PM</div>
+    <div class="planner">5:00 PM</div>
+    <div class="planner">6:00 PM</div>
+    <div class="planner">7:00 PM</div>
+    <div class="planner">8:00 PM</div>
+    <div class="planner">9:00 PM</div>
+    <div class="planner">10:00 PM</div>
 </div>
 
 <style>
@@ -44,5 +65,16 @@
 	#date {
 		text-align: center;
 	}
+    .days {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .planner {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        border-top: thin dotted;
+    }
 
 </style>
