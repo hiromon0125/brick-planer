@@ -15,9 +15,9 @@
 
 <style>
 	img {
-        width: 80px;
+        width: 70px;
 		clip-path: circle();
-		margin: 20px;
+		margin: 13px;
 		overflow: hidden;
 	}
 

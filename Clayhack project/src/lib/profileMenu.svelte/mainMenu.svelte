@@ -20,7 +20,7 @@
 		<a class="link" on:click={menuStateChange} href="calendar">
 			<i class="fa-solid fa-calendar" />Calendar</a
 		>
-		<a class="link" on:click={menuStateChange} href="activities%20catalogue"
+		<a class="link" on:click={menuStateChange} href="activities"
 			><i class="fa-solid fa-flag" /> Activties</a
 		>
 		<a class="link" on:click={menuStateChange}><i class="fa-solid fa-heart" />Favorite Locations</a>
