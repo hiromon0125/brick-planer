@@ -37,7 +37,6 @@
 		position: absolute;
 		width: 70%;
 		height: 100vh;
-		border: black 1px solid;
 		top: 0;
 		left: 0;
 		z-index: 10000;
